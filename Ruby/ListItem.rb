@@ -4,11 +4,19 @@ class ListItem
 		@nextNode = nextNode
 	end
 
-	def getValue
+	def getValue()
 		return @value
 	end
 
-	def getNextNode
+	def setValue(value)
+		@value = value
+	end
+
+	def getNextNode()
 		return @nextNode
+	end
+
+	def setNextNode(node)
+		@nextNode = node
 	end
 end
