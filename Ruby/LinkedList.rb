@@ -1,10 +1,14 @@
 class LinkedList
-	def initalize()
-		@head = null
+	def initialize()
+		@head
+	end
+
+	def getHead()
+		return @head
 	end
 
 	def add(item)
-		if(@head = null)
+		if !@head
 			@head = item
 			return
 		end
@@ -16,7 +20,7 @@ class LinkedList
 		if(index < self.size())
 			get(index).setNextNode(get(index + 1))
 		else
-			get(index).setNextNode = null
+			get(index).setNextNode = nil
 		end
 	end
 
@@ -50,15 +54,15 @@ class LinkedList
 	# we want to do pretty much anything.
 	##
 	def size()
-		if(@head == null)
+		if !@head
 			return 0
 		else
-			count = 0;
+			count = 1;
 			currentNode = @head
 
-			while currentNode.getNextNode() == null
+			while currentNode.getNextNode() do
 				currentNode = currentNode.getNextNode()
-				count++
+				count = count + 1
 			end
 
 			return count

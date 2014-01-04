@@ -1,7 +1,7 @@
 class ListItem
-	def initalize(value, nextNode)
+	def initialize(value)
 		@value = value
-		@nextNode = nextNode
+		@nextNode
 	end
 
 	def getValue()
