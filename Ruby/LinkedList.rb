@@ -27,8 +27,10 @@ class LinkedList
 	def get(index)
 		if(index < self.size())
 			currentNode = @head
-			for i in 0..index
-				currentNode = currentNode.getNextNode()
+			if index > 0
+				for i in 0..head
+					currentNode = currentNode.getNextNode()
+				end
 			end
 			return currentNode
 		else
