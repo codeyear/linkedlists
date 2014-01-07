@@ -28,7 +28,7 @@ class LinkedList
 		if(index < self.size())
 			currentNode = @head
 			if index > 0
-				for i in 0..head
+				for i in 0..head # BUT WHY?
 					currentNode = currentNode.getNextNode()
 				end
 			end
